@@ -1,0 +1,167 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section .layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/mountain.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  transition: 2s;
+  filter: blur(5px);
+}
+
+section .layer1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 450px;
+  z-index: 1;
+  background: url(../img/mountain.jpeg);
+  background-position: center;
+  transition: 2s;
+  box-shadow: 0 25px 60px rgba(0,0,0,.8);
+  
+}
+
+.layer1:hover ~ .layer2 {
+  filter: blur(0);
+}
+
+.layer1:hover {
+  box-shadow: 0 25px 60px rgba(0,0,0,.8);
+}
+
+.layer1 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+  width: 100%;
+}
+
+ h1 {
+  text-align: center;
+  font-size: 60px;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f);
+  -webkit-background-clip: text;
+  animation: animate 20s linear infinite;
+  background-size: 1000%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.layer1 .content .layer1-btn {
+    margin-top: 7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    
+}
+
+.layer1 .content .layer1-btn2 {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #0a0a0a;
+    background-color: #ccc;
+    opacity: 0.9;
+    font-size: 17px;
+    border-radius: 12px;
+    transition: 0.6s;
+}
+
+.layer1 .content .layer1-btn2:hover {
+    color: #ccc;
+    background-color: #0a0a0a;
+}
+
+.navigation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/mountain-bg.jpeg);
+  background-size: cover;
+  filter: blur(5px);
+  transition: 2s;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  max-width: 200px;
+  transition: 2s;
+  margin-right: 24px;
+}
+
+.logo1:hover, .logo2:hover, .logo3:hover {
+  /* filter: blur(10px); */
+  transform: scale(1.7);
+  z-index: 100;
+}
+
+.logo:hover ~ .bg {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+
+    
+
+
+
+
