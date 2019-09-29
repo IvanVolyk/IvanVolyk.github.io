@@ -1,1 +1,1 @@
-# landing-mountain-trip.github.io
+# mountaintrip.github.io
