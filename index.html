@@ -1,28 +1,281 @@
 ﻿<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="uk" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Blur Everything Expect The Hovered - Pure Html and CSS Image Hover Effects Tutorial</title>
+  <title>Новини Київщини</title>
+  <link rel="stylesheet" href="style/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="style/slick.css">
+  <link rel="stylesheet" href="style/jquery.formstyler.css">
   <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
-	<section>
-		  <div class="layer1">
-        <div class="content">
-          <div class="center"><h1>AMAZING MOUNTAIN TRIP!</h1></div>
-          <a href="#nav-section" class="layer1-btn layer1-btn2">More</a>
-        </div>  
-      </div>
-		  <div class="layer2"></div>
+	<div>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__contacts">
+				<a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Ми Вам зателефонуємо</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__content">
+			<div class="container">
+			<div class="header__content-inner">
+			<div class="header__logo">
+				<a href="#"><img src="img/LOGOTYPE.png" alt="#"></a>
+			</div>
+			<nav class="menu">
+				<div class="header__btn-menu">
+					<span class="icon-bars"></span>
+				</div>
+				<ul>
+					<li><a href="#">Про нас</a></li>
+					<li><a href="#">Новини</a></li>
+					<li><a href="#">RSS новини</a></li>
+					<li><a href="#footer">Контакти</a></li>
+				</ul>
+			</nav>
+			</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="news">
+		<div class="container">
+			<div class="news__top">
+				<div class="news__title-box">
+					<div class="news__title">
+						Новини
+					</div>
+					<div class="news__text">
+						Актуальні новини Київської області
+					</div>
+				</div>
+			</div>
+			<div class="news__inner">
+				<div class="news__slider">
+					<div class="news__slider-inner">
+						<div class="news__slider-item">
+							<div class="news__slider-title">
+								У Київській області загорілась електростанція, мешканці чули вибух
+							</div>
+							<div class="news__slider-text">
+								Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.
+							</div>
+							<div class="news__slider-author">
+								Детальніше
+							</div>
+						</div>
+						<div class="news__slider-item">
+							<div class="news__slider-title">
+								У Київській області загорілась електростанція, мешканці чули вибух
+							</div>
+							<div class="news__slider-text">
+								Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.
+							</div>
+							<div class="news__slider-author">
+								Детальніше
+							</div>
+						</div>
+						<div class="news__slider-item">
+							<div class="news__slider-title">
+								У Київській області загорілась електростанція, мешканці чули вибух
+							</div>
+							<div class="news__slider-text">
+								Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.
+							</div>
+							<div class="news__slider-author">
+								Детальніше
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news.png" alt="#">
+						<div class="news__date">03.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.</div>
+				</a> 
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news1.png" alt="#">
+						<div class="news__date">09.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух</div>
+				</a>
+			</div>
+
+			<div class="news__inner" style="margin-top: 2em;">
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news.png" alt="#">
+						<div class="news__date">03.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.</div>
+				</a> 
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news.png" alt="#">
+						<div class="news__date">03.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.</div>
+				</a> 
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news.png" alt="#">
+						<div class="news__date">03.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух.</div>
+				</a> 
+				<a class="news__blog" href="#">
+					<div class="news__images">
+						<img src="img/news1.png" alt="#">
+						<div class="news__date">09.04</div>
+					</div>
+					<div class="news__blog-title">У Київській області загорілась електростанція, мешканці чули вибух</div>
+					<div class="news__blog-text">Увечері в четвер, 9 квітня, в Боярці Київської області загорілась електрична підстанція.
+За даними каналу, у трансформаторній будці загорілося мастило.
+Вогонь було видно у віддалених районах міста. Місцеві жителі повідомляють, що ніби був чутний вибух</div>
+				</a>
+			</div>
+		</div>
 	</section>
-  <section class="navigation" id="nav-section" style="width: 100%; height: 100vh;">
-    <img src="img/mountain1.jpg" alt="#" class="logo logo1">
-    <img src="img/mountain2.jpeg" alt="#" class="logo logo2">
-    <img src="img/mountain3.jpeg" alt="#" class="logo logo3">
-    <div class="bg"></div>
-    
-  </section>
+
+	<section class="rss-news">Секция для RSS</section>
+	
+	
+	
+	 <section class="form">
+		<div class="container">
+			<div class="form__inner">
+				<div class="form__content">
+					<div class="form__title-box">
+						<div class="form__title">
+							Подати звернення
+						</div>
+						<div class="form__text">
+							Заповніть форму нижче, і ми зв'яжемося з Вами найближчим часом!
+						</div>
+					</div>
+					<div class="form__box">
+						<form>
+							<div class="form__box-inner">
+								<div class="form__box-left">
+									<label>
+										E-mail
+										<input type="text">
+									</label>
+									<label>
+										Контактний телефон
+										<input type="text">
+									</label>
+									<label>
+										ПІБ
+										<input type="text">
+									</label>
+									<label>
+										Тема
+										<select>
+											<option>Тема номер один</option>
+											<option>Тема номер два</option>
+											<option>Тема номер три</option>
+											<option>Тема номер чотири</option>
+										</select>
+									</label>	
+								</div>
+								<div class="form__box-right">
+									<label>
+										Ваше повідомлення
+										<textarea></textarea>
+									</label>
+									<button type="submit" class="default__btn">
+										Подати звернення
+									</button>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+	
+	
+	<footer class="footer" id="footer">
+		<div class="footer__content">
+			<div class="container">
+				<div class="footer__inner">
+				<div class="footer__info">
+					<div class="footer__title">
+						Назва організації
+					</div>
+					<div class="footer__text">
+						Короткий текст про компанію. Тут класне місце для SEO тексту.
+					</div>
+						<ul class="footer__list">
+						<li><a class="footer__phone" href="#tel:380963092145">+38 (096) 111 11 11</a></li>
+						<li><a href="#">email@gmail.com</a></li>
+						<li><a class="footer__adress" href="#">Адреса</a></li>
+					</ul>
+				</div>
+				<div class="footer__map">
+					<iframe width="630px" height="230px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3297411746034!2d30.49738081515719!3d50.509431190995194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d213cf960c5f%3A0xf6c35224bc60ab6c!2z0J7QsdC-0LvQvtC90YHQutC40Lkg0L_RgNC-0YHQvy4sIDE4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1575826021929!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				</div>	
+			</div>
+		</div>
+		<div class="footer__copy">
+			<div class="container">
+				<div class="copy__text">
+					Створено в 2020 році. Слава Україні!
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="modal">
+		<form>
+			<input type="text" placeholder="Ваше им'я">
+			<input type="text" placeholder="Ваш телефон">
+			<input type="submit" value="Надіслати">
+		</form>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/jquery.fancybox.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/jquery.formstyler.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
