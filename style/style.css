@@ -809,7 +809,7 @@ justify-content: space-between; */
 	text-align: center;
 }
 .footer__info {
-	/* max-width: 360px; */
+	max-width: 100%;
 }
 .footer__list {
 	padding-top: 10px;
@@ -872,6 +872,48 @@ justify-content: space-between; */
     margin-right: 1em;
     color: #fff;
     cursor: pointer;
+}
+
+.footer-data {
+	text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-data ul li {
+	margin-bottom: 1em;
+}
+
+.footer-data ul li a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.footer-data ul li a:before {
+	content: '\f003';
+	position: absolute;
+	left: 0;
+	font-family: 'icomoon';
+	color: #fbb104;
+}
+
+.footer-data ul li a.tel:before {
+	content: '\f095';
+	left: 42em;
+}
+.footer-data ul li a.eml:before {
+	content: '\f003';
+	left: 42em;
+}
+
+.footer-data ul li a:before {
+    /* right: 80px; */
+    position: absolute;
+    left: 42em;
+    font-family: 'icomoon';
+    /* padding-right: 4em; */
+    /* margin-right: 6em; */
+    color: #fff;
 }
 
 /* Блок footer */
