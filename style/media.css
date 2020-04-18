@@ -35,6 +35,8 @@
 		padding-bottom: 60px;
 	}
 }
+
+
 @media (max-width: 1050px) {
 	.footer__inner {
 		display: block;
@@ -47,7 +49,42 @@
 		margin-bottom: 25px;
 	}
 }
+
+@media (max-width: 1024px) {
+	.news__inner {
+		margin-right: 1em;
+	}
+
+
+}
+
+@media (min-width: 1024px) {
+
+		.rss-news-smart {
+		display: none;
+	}
+
+}
+
+
 @media (max-width: 900px) {
+	.block1 {
+    width: 100%;
+	}
+
+	.block2 {
+		display: none;
+	}
+
+	.rss-news-smart {
+		text-align: center;
+		background-color: #ced6e0;
+		color: #2f3542;
+		height: 20em !important;
+		display: block;
+	}
+
+
 	.slider .slick-btn {
 		display: none !important;
 	}
